@@ -1,0 +1,73 @@
+version: "3.9"
+
+# ----------------------------------------------------
+# Car Rental App - Full Stack Environment
+# Stack Versions (Stable as of Nov 2025):
+#   PHP: 8.3
+#   MySQL: 8.0
+#   Node.js: 20 (LTS)
+#   Nginx: stable
+# ----------------------------------------------------
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: carrental-mysql
+    restart: unless-stopped
+    ports:
+      - "3307:3306" # change if local MySQL already uses 3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: carrental_db
+      MYSQL_USER: zainal
+      MYSQL_PASSWORD: password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - carrental_net
+
+  php:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    container_name: carrental-php
+    restart: unless-stopped
+    working_dir: /var/www/laravel
+    volumes:
+      - ./laravel:/var/www/laravel
+    depends_on:
+      - mysql
+    networks:
+      - carrental_net
+
+  nginx:
+    image: nginx:stable
+    container_name: carrental-nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./laravel:/var/www/laravel
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+    networks:
+      - carrental_net
+
+  node:
+    image: node:20
+    container_name: carrental-node
+    working_dir: /var/www/laravel
+    volumes:
+      - ./laravel:/var/www/laravel
+    ports:
+      - "5173:5173" # Vite dev server
+    networks:
+      - carrental_net
+    command: tail -f /dev/null # keep container alive; exec in manually for npm tasks
+
+networks:
+  carrental_net:
+
+volumes:
+  mysql_data:

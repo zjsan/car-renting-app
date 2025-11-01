@@ -1,0 +1,46 @@
+# -----------------------------
+# Laravel / PHP
+# -----------------------------
+/vendor/
+.env
+.env.*
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/storage/*.key
+/public/storage
+/node_modules/
+npm-debug.log
+yarn-error.log
+/composer.lock
+/package-lock.json
+
+# -----------------------------
+# Vite / Vue / Build Files
+# -----------------------------
+/public/hot
+/public/build
+/public/mix-manifest.json
+
+# -----------------------------
+# Docker / Containers
+# -----------------------------
+/docker/mysql_data
+/docker/php/vendor
+/docker/nginx/logs
+*.pid
+*.log
+
+# -----------------------------
+# OS / Editor Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# -----------------------------
+# Git backup files
+# -----------------------------
+*.orig
