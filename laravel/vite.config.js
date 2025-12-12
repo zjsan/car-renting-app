@@ -3,6 +3,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
     plugins: [
@@ -11,6 +12,7 @@ export default defineConfig({
             refresh: true,
         }),
         vue(),
+        tailwindcss(),
     ],
     server: {
         // 1. Keep '0.0.0.0' so Vite listens correctly inside the container
