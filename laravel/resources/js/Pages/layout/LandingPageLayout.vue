@@ -12,7 +12,7 @@
 <script setup>
 const props = defineProps({
     title: { type: String, required: true },
-    header2: { type: String, required: true },
+    header2: { type: String },
     message: { type: String, required: true },
     titleClass: { type: String, default: "text-black" }, // allows color override
 });
