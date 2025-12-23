@@ -5,7 +5,7 @@
         <p class="text-gray-600 leading-relaxed">{{ message }}</p>
     </div>
 </template>
-<script>
+<script setup>
 const props = defineProps({
     title: { type: String, required: true },
     header2: { type: String, required: true },
