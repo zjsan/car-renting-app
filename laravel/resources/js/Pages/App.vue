@@ -1,14 +1,17 @@
+<!-- src/App.vue -->
 <template>
-    <div class="text-center mt-10">
-        <h1 class="text-3xl font-bold text-blue-600">🚗 Car Rental App</h1>
-        <p>Welcome to your Vue + Laravel + Docker setup!</p>
-    </div>
+    <RouterView />
 </template>
 
-<script setup></script>
+<script setup>
+import { RouterView } from "vue-router";
+</script>
 
 <style>
+html,
 body {
-    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
 }
 </style>
