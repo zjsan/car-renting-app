@@ -27,5 +27,18 @@ defineProps({
     message: { type: String },
     bgClass: { type: String, default: "bg-white" },
     titleClass: { type: String, default: "text-slate-900" },
+    bgImage: { type: String, default: "" },
+});
+
+// Computed style to handle the background image safely
+const sectionStyle = computed(() => {
+    return props.bgImage
+        ? {
+              backgroundImage: `url(${props.bgImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+          }
+        : {};
 });
 </script>
