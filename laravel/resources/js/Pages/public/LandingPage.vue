@@ -1,6 +1,6 @@
 <template>
-    <LandingPageLayout title="Ride Smarter Save Together" message="testing" />
+    <Hero />
 </template>
 <script setup>
-import LandingPageLayout from "../layout/LandingPageLayout.vue";
+import Hero from "./Hero.vue";
 </script>
