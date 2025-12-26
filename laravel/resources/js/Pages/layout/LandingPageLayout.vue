@@ -7,6 +7,11 @@
                 >
                     {{ title }}
                 </h1>
+                <h2
+                    :class="['text-2xl md:text-3xl font-bold mb-4', titleClass]"
+                >
+                    {{ subheading }}
+                </h2>
                 <p v-if="message" class="text-gray-600 max-w-2xl mx-auto">
                     {{ message }}
                 </p>
@@ -17,7 +22,8 @@
 
 <script setup>
 defineProps({
-    title: { type: String, required: true },
+    title: { type: String },
+    subheading: { type: String },
     message: { type: String },
     bgClass: { type: String, default: "bg-white" },
     titleClass: { type: String, default: "text-slate-900" },
