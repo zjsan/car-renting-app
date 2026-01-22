@@ -52,7 +52,7 @@ const props = defineProps({
     title: { type: String },
     subheading: { type: String },
     message: { type: String },
-    bgClass: { type: String, default: "py-16 px-4 bg-white" },
+    bgClass: { type: String, default: "py-16 px-4 bg-gray-50" },
     titleClass: { type: String, default: "text-slate-900" },
 
     // --- New Advanced Props ---
