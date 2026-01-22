@@ -59,6 +59,7 @@ const props = defineProps({
     bgImage: { type: String, default: null },
     sectionClass: { type: String, default: "" }, // For h-screen or custom padding
     containerClass: { type: String, default: "" }, // For alignment (text-left vs text-center)
+    bgPosition: { type: String, default: "center" }, //for background position flexibility
 });
 
 // Computed style to handle the background image safely
@@ -67,7 +68,7 @@ const sectionStyle = computed(() => {
         ? {
               backgroundImage: `url(${props.bgImage})`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: props.bgPosition,
               backgroundRepeat: "no-repeat",
           }
         : {};
