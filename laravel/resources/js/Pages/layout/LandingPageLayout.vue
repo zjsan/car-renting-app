@@ -7,7 +7,7 @@
         ]"
         :style="sectionStyle"
     >
-        <div v-if="bgImage" class="absolute inset-0 bg-black/40 z-0"></div>
+        <div v-if="bgImage" class="absolute inset-0 bg-gradient-to-b z-0"></div>
 
         <div :class="['relative z-10 container mx-auto', containerClass]">
             <div
@@ -16,7 +16,10 @@
             >
                 <h1
                     v-if="title"
-                    :class="['text-4xl md:text-5xl font-bold mb-4', titleClass]"
+                    :class="[
+                        'text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 tracking-tight text-white',
+                        titleClass,
+                    ]"
                 >
                     {{ title }}
                 </h1>
@@ -31,7 +34,7 @@
                 </h2>
                 <p
                     v-if="message"
-                    class="text-gray-600 max-w-2xl mx-auto leading-relaxed"
+                    class="text-lg md:text-xl text-white max-w-2xl font-extrabold mx-auto leading-relaxed opacity-90"
                 >
                     {{ message }}
                 </p>

@@ -1,8 +1,9 @@
 <template>
     <LandingPageLayout
-        title="Ride Smarter Save Together"
-        message="testing"
+        title="Your Destination for Quality Car Rentals. Rent with Confidence!"
+        message="Discover a Fleet of Quality Vehicles, Seamless Booking, and Unbeatable Service."
         bgImage="images/4de153d9-a527-4f2e-b175-6942a70b3607.png"
+        sectionClass="min-h-screen"
     />
 </template>
 <script setup>
