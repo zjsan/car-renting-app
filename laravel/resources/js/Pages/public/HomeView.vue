@@ -16,6 +16,8 @@
     </LandingPageLayout>
 
     <!-- About Us Section -->
+
+    <!-- Who We Are -->
     <LandingPageLayout>
         <template #subheading>
             Who <span class="text-blue-600">We Are</span>
@@ -59,32 +61,19 @@
         </div>
     </LandingPageLayout>
 
+    <!-- What Makes Us Different -->
     <LandingPageLayout>
         <template #subheading>
             What Makes Us <span class="text-blue-600">Different</span>
         </template>
-        <div class="md:w-1/2">
-            <p
-                class="max-w-2xl text-center md:text-left text-slate-700 text-lg md:text-xl leading-relaxed"
-            >
-                We are a trusted car rental service proudly serving Ilocos Norte
-                and nearby areas. Our goal is simple: to
-                <span class="text-yellow-400 font-bold">
-                    make transportation easy </span
-                >, <span class="text-yellow-400 font-bold"> affordable </span>,
-                and
-                <span class="text-yellow-400 font-bold"> dependable </span>
-                for every customer.
-            </p>
-
-            <p
-                class="mt-7 max-w-2xl text-center md:text-left text-slate-700 text-lg md:text-xl leading-relaxed"
-            >
-                Whether you’re a tourist exploring the province, a local needing
-                a temporary vehicle, or a returning balikbayan visiting family,
-                we provide well-maintained cars and friendly service you can
-                rely on.
-            </p>
+        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <Cards v-for="item in features" :key="item.title" hoverable>
+                <template #icon>{{ item.icon }}</template>
+                <template #title>{{ item.title }}</template>
+                <p>
+                    {{ item.text }}
+                </p>
+            </Cards>
         </div>
     </LandingPageLayout>
 </template>
@@ -92,4 +81,6 @@
 <script setup>
 import LandingPageLayout from "../layout/LandingPageLayout.vue";
 import BaseButton from "../components/Basebutton.vue";
+import Cards from "../components/Cards.vue";
+import features from "./features";
 </script>
