@@ -63,6 +63,7 @@ const props = defineProps({
     sectionClass: { type: String, default: "" }, // For h-screen or custom padding
     containerClass: { type: String, default: "" }, // For alignment (text-left vs text-center)
     bgPosition: { type: String, default: "center" }, //for background position flexibility
+    bgImageAlt: { type: String, default: "" },
 });
 
 // Computed style to handle the background image safely

@@ -4,6 +4,7 @@
         title="Explore Ilocos Norte with Comfort and Confidence"
         message="Affordable, well-maintained vehicles for locals and tourists. Book your ride easily and explore Ilocos Norte your way."
         bgImage="images/car-rental-hero.png"
+        bgImageAlt="A blue sedan in Patapat Bridge"
         sectionClass="min-h-screen"
     >
         <div class="mt-5 flex flex-row items-center space-x-4 justify-center">
@@ -19,29 +20,42 @@
         <template #subheading>
             Who <span class="text-blue-600">We Are</span>
         </template>
-        <div>
-            <p
-                class="max-w-2xl mx-auto text-center text-slate-700 text-lg md:text-xl leading-relaxed"
-            >
-                We are a trusted car rental service proudly serving Ilocos Norte
-                and nearby areas. Our goal is simple: to
-                <span class="text-yellow-400 font-bold"
-                    >make transportation easy</span
-                >
-                ,
-                <span class="text-yellow-400 font-bold">affordable</span>, and
-                <span class="text-yellow-400 font-bold">dependable</span>
-                for every customer.
-            </p>
 
-            <p
-                class="mt-7 max-w-2xl mx-auto text-center text-slate-700 text-lg md:text-xl leading-relaxed"
-            >
-                Whether you’re a tourist exploring the province, a local needing
-                a temporary vehicle, or a returning balikbayan visiting family,
-                we provide well-maintained cars and friendly service you can
-                rely on.
-            </p>
+        <div class="mt-12 flex flex-col-reverse md:flex-row items-center gap-5">
+            <!-- Text -->
+            <div class="md:w-1/2">
+                <p
+                    class="max-w-2xl text-center md:text-left text-slate-700 text-lg md:text-xl leading-relaxed"
+                >
+                    We are a trusted car rental service proudly serving Ilocos
+                    Norte and nearby areas. Our goal is simple: to
+                    <span class="text-yellow-400 font-bold">
+                        make transportation easy </span
+                    >,
+                    <span class="text-yellow-400 font-bold"> affordable </span>,
+                    and
+                    <span class="text-yellow-400 font-bold"> dependable </span>
+                    for every customer.
+                </p>
+
+                <p
+                    class="mt-7 max-w-2xl text-center md:text-left text-slate-700 text-lg md:text-xl leading-relaxed"
+                >
+                    Whether you’re a tourist exploring the province, a local
+                    needing a temporary vehicle, or a returning balikbayan
+                    visiting family, we provide well-maintained cars and
+                    friendly service you can rely on.
+                </p>
+            </div>
+
+            <!-- Image -->
+            <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+                <img
+                    src="/public/images/stylish-elegant-woman-car-salon.jpg"
+                    alt="Happy customer renting a car"
+                    class="w-full max-w-lg rounded-md shadow-md"
+                />
+            </div>
         </div>
     </LandingPageLayout>
 </template>
