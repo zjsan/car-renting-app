@@ -15,14 +15,28 @@
     </LandingPageLayout>
 
     <!-- About Us Section -->
-    <LandingPageLayout subheading="hello">
-        <BaseButton variant="primary">Save Changes</BaseButton>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
-            accusantium. Veritatis, reprehenderit non. Culpa tempore ad officia
-            blanditiis? Molestias inventore aliquid, unde velit vel reiciendis
-            dolor recusandae numquam. Veritatis, excepturi?
-        </p>
+    <LandingPageLayout>
+        <template #subheading>
+            Who <span class="text-blue-600">We Are</span>
+        </template>
+        <div>
+            <p
+                class="max-w-3xl mx-auto text-center text-slate-700 text-lg md:text-xl leading-relaxed"
+            >
+                We are a trusted car rental service proudly serving Ilocos Norte
+                and nearby areas. Our goal is simple: to make transportation
+                easy, affordable, and dependable for every customer.
+            </p>
+
+            <p
+                class="mt-7 max-w-3xl mx-auto text-center text-slate-700 text-lg md:text-xl leading-relaxed"
+            >
+                Whether you’re a tourist exploring the province, a local needing
+                a temporary vehicle, or a returning balikbayan visiting family,
+                we provide well-maintained cars and friendly service you can
+                rely on.
+            </p>
+        </div>
     </LandingPageLayout>
 </template>
 

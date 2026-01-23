@@ -24,13 +24,13 @@
                     {{ title }}
                 </h1>
                 <h2
-                    v-if="subheading"
+                    v-if="$slots.subheading"
                     :class="[
-                        'text-2xl md:text-3xl font-semibold mb-4',
+                        'text-2xl md:text-3xl font-bold mb-4 text-slate-900',
                         titleClass,
                     ]"
                 >
-                    {{ subheading }}
+                    <slot name="subheading" />
                 </h2>
                 <p
                     v-if="message"
