@@ -58,6 +58,35 @@
             </div>
         </div>
     </LandingPageLayout>
+
+    <LandingPageLayout>
+        <template #subheading>
+            What Makes Us <span class="text-blue-600">Different</span>
+        </template>
+        <div class="md:w-1/2">
+            <p
+                class="max-w-2xl text-center md:text-left text-slate-700 text-lg md:text-xl leading-relaxed"
+            >
+                We are a trusted car rental service proudly serving Ilocos Norte
+                and nearby areas. Our goal is simple: to
+                <span class="text-yellow-400 font-bold">
+                    make transportation easy </span
+                >, <span class="text-yellow-400 font-bold"> affordable </span>,
+                and
+                <span class="text-yellow-400 font-bold"> dependable </span>
+                for every customer.
+            </p>
+
+            <p
+                class="mt-7 max-w-2xl text-center md:text-left text-slate-700 text-lg md:text-xl leading-relaxed"
+            >
+                Whether you’re a tourist exploring the province, a local needing
+                a temporary vehicle, or a returning balikbayan visiting family,
+                we provide well-maintained cars and friendly service you can
+                rely on.
+            </p>
+        </div>
+    </LandingPageLayout>
 </template>
 
 <script setup>
