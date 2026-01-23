@@ -1,4 +1,5 @@
 <template>
+    <!-- Hero Section -->
     <LandingPageLayout
         title="Your Destination for Quality Car Rentals."
         message="Discover a Fleet of Quality Vehicles, Seamless Booking, and Unbeatable Service."
@@ -14,7 +15,8 @@
         </p>
     </LandingPageLayout>
 
-    <LandingPageLayout title="hello">
+    <!-- About Us Section -->
+    <LandingPageLayout subheading="hello">
         <BaseButton variant="primary">Save Changes</BaseButton>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
@@ -26,5 +28,4 @@
 </template>
 <script setup>
 import LandingPageLayout from "../layout/LandingPageLayout.vue";
-import Basebutton from "../components/Basebutton.vue";
 </script>
