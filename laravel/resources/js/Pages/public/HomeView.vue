@@ -21,15 +21,21 @@
         </template>
         <div>
             <p
-                class="max-w-3xl mx-auto text-center text-slate-700 text-lg md:text-xl leading-relaxed"
+                class="max-w-2xl mx-auto text-center text-slate-700 text-lg md:text-xl leading-relaxed"
             >
                 We are a trusted car rental service proudly serving Ilocos Norte
-                and nearby areas. Our goal is simple: to make transportation
-                easy, affordable, and dependable for every customer.
+                and nearby areas. Our goal is simple: to
+                <span class="text-yellow-400 font-bold"
+                    >make transportation easy</span
+                >
+                ,
+                <span class="text-yellow-400 font-bold">affordable</span>, and
+                <span class="text-yellow-400 font-bold">dependable</span>
+                for every customer.
             </p>
 
             <p
-                class="mt-7 max-w-3xl mx-auto text-center text-slate-700 text-lg md:text-xl leading-relaxed"
+                class="mt-7 max-w-2xl mx-auto text-center text-slate-700 text-lg md:text-xl leading-relaxed"
             >
                 Whether you’re a tourist exploring the province, a local needing
                 a temporary vehicle, or a returning balikbayan visiting family,
