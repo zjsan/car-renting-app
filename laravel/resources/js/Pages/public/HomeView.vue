@@ -1,8 +1,8 @@
 <template>
     <!-- Hero Section -->
     <LandingPageLayout
-        title="Your Destination for Quality Car Rentals."
-        message="Discover a Fleet of Quality Vehicles, Seamless Booking, and Unbeatable Service."
+        title="Explore Ilocos Norte with Comfort and Confidence"
+        message="Affordable, well-maintained vehicles for locals and tourists. Book your ride easily and explore Ilocos Norte your way."
         bgImage="images/4de153d9-a527-4f2e-b175-6942a70b3607.png"
         sectionClass="min-h-screen"
     >
