@@ -11,7 +11,7 @@
 
         <div :class="['relative z-10 container mx-auto', containerClass]">
             <div
-                v-if="title || subheading || message"
+                v-if="title || subheading || message || $slots.subheading"
                 class="mb-10 text-center"
             >
                 <h1
@@ -24,14 +24,17 @@
                     {{ title }}
                 </h1>
                 <h2
-                    v-if="$slots.subheading"
+                    v-if="props.subheading || $slots.subheading"
                     :class="[
                         'text-2xl md:text-3xl font-bold mb-4 text-slate-900',
                         titleClass,
                     ]"
                 >
-                    <slot name="subheading" />
+                    <slot name="subheading">
+                        {{ props.subheading }}
+                    </slot>
                 </h2>
+
                 <p
                     v-if="message"
                     class="text-lg md:text-xl text-white max-w-2xl font-semibold mx-auto leading-relaxed opacity-90 drop-shadow-md"
