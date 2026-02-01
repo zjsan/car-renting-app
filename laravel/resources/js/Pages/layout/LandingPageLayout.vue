@@ -7,7 +7,15 @@
         ]"
         :style="sectionStyle"
     >
-        <div v-if="bgImage" class="absolute inset-0 bg-gradient-to-b z-0"></div>
+        <div v-if="bgImage" class="absolute inset-0 z-0">
+            <img 
+                :src="bgImage" 
+                :alt="bgImageAlt" 
+                class="w-full h-full object-cover"
+                :style="{ objectPosition: bgPosition }"
+            />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
 
         <div :class="['relative z-10 container mx-auto', containerClass]">
             <div
