@@ -30,8 +30,8 @@
                 <p
                     class="max-w-2xl md: text-slate-700 text-lg text-xl leading-relaxed"
                 >
-                    We are a trusted car rental service proudly serving Ilocos
-                    Norte and nearby areas. Our goal is simple: to
+                    We are a <span class="text-yellow-400 font-bold">trusted car rental service</span> proudly serving <span class="font-bold">Ilocos
+                    Norte </span>and nearby areas. Our goal is simple: to
                     <span class="text-yellow-400 font-bold">
                         make transportation easy </span
                     >,
@@ -47,7 +47,7 @@
                     Whether you’re a tourist exploring the province, a local
                     needing a temporary vehicle, or a returning balikbayan
                     visiting family, we provide well-maintained cars and
-                    friendly service you can rely on.
+                    friendly  <span class="text-yellow-400 font-bold">service you can rely on.</span>
                 </p>
             </div>
 
@@ -56,7 +56,7 @@
                 <img
                     src="/public/images/stylish-elegant-woman-car-salon.jpg"
                     alt="Happy customer renting a car"
-                    class="w-full max-w-lg rounded-md shadow-md"
+                    class="w-full max-w-lg rounded-md shadow-md md: "
                 />
             </div>
         </div>
