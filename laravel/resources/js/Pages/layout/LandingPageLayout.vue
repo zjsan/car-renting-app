@@ -17,7 +17,7 @@
                 <h1
                     v-if="title"
                     :class="[
-                        'text-4xl md:text-6xl lg:text-7xl font-semibold mb-6 tracking-tight text-white drop-shadow-md',
+                        'text-4xl md:text-6xl lg:text-7xl font-semibold mb-6 tracking-tight text-white drop-shadow-xl',
                         titleClass,
                     ]"
                 >
@@ -37,7 +37,7 @@
 
                 <p
                     v-if="message"
-                    class="text-lg md:text-xl text-white max-w-2xl font-semibold mx-auto leading-relaxed opacity-90 drop-shadow-md"
+                    class="text-lg md:text-xl text-white max-w-2xl font-semibold mx-auto leading-relaxed opacity-90 drop-shadow-xl"
                 >
                     {{ message }}
                 </p>
