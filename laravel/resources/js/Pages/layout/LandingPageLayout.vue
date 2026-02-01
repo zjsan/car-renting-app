@@ -12,7 +12,7 @@
             <img 
                 :src="bgImage" 
                 :alt="bgImageAlt" 
-                class=" "
+                class="w-full h-full object-cover"
                 :style="{ objectPosition: bgPosition }"
             />
             <div class="absolute inset-0 bg-black/40"></div>
