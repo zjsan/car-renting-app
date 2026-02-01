@@ -8,7 +8,7 @@
         sectionClass="min-h-screen md: h-screen"
     >
         <div class="mt-5 flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 md:justify-center">
-            <BaseButton variant="secondary" size="lg" >Rent a Car</BaseButton>
+            <BaseButton variant="secondary" size="lg" class="w-44">Rent a Car</BaseButton>
             <BaseButton variant="primary" size="lg"
                 >Discover our fleet</BaseButton
             >

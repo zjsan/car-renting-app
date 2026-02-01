@@ -39,6 +39,7 @@ const sizes = {
     xl: "px-8 py-4 text-lg",
 };
 
+
 // Combine classes dynamically
 const buttonClass = computed(() => {
     return [baseStyles, variants[props.variant], sizes[props.size]].join(" ");
