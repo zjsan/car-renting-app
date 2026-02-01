@@ -5,7 +5,8 @@
         message="Affordable, well-maintained vehicles for locals and tourists. Book your ride easily and explore Ilocos Norte your way."
         bgImage="images/car-rental-hero.png"
         bgImageAlt="A blue sedan in Patapat Bridge"
-        sectionClass="min-h-screen md: h-screen"
+        bgPosition="center"
+        sectionClass="min-h-[80vh] md:h-screen flex items-center"
     >
         <div class="mt-5 flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 md:justify-center">
             <BaseButton variant="secondary" size="lg" class="w-44">Rent a Car</BaseButton>
@@ -25,9 +26,9 @@
 
         <div class="mt-12 flex flex-col-reverse p-5 md:flex-row items-center gap-5">
             <!-- Text -->
-            <div class="md:w-1/2">
+            <div class="md:w-1/2 text-justify">
                 <p
-                    class="max-w-2xl text-center md:text-left text-slate-700 text-lg md:text-xl leading-relaxed"
+                    class="max-w-2xl md: text-slate-700 text-lg text-xl leading-relaxed"
                 >
                     We are a trusted car rental service proudly serving Ilocos
                     Norte and nearby areas. Our goal is simple: to
@@ -41,7 +42,7 @@
                 </p>
 
                 <p
-                    class="mt-7 max-w-2xl text-center md:text-left text-slate-700 text-lg md:text-xl leading-relaxed"
+                    class="mt-7 max-w-2xl md: text-slate-700 text-lg text-xl leading-relaxed"
                 >
                     Whether you’re a tourist exploring the province, a local
                     needing a temporary vehicle, or a returning balikbayan
@@ -51,7 +52,7 @@
             </div>
 
             <!-- Image -->
-            <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+            <div class="md:w-1/2 flex justify-center mb-8 md:mb-0 ml-10">
                 <img
                     src="/public/images/stylish-elegant-woman-car-salon.jpg"
                     alt="Happy customer renting a car"

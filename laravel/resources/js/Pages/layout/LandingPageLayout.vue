@@ -7,16 +7,18 @@
         ]"
         :style="sectionStyle"
     >
+        <!--bg image section-->
         <div v-if="bgImage" class="absolute inset-0 z-0">
             <img 
                 :src="bgImage" 
                 :alt="bgImageAlt" 
-                class="w-full h-full object-cover"
+                class=" "
                 :style="{ objectPosition: bgPosition }"
             />
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
 
+        <!--contents-->
         <div :class="['relative z-10 container mx-auto', containerClass]">
             <div
                 v-if="title || subheading || message || $slots.subheading"
@@ -45,7 +47,7 @@
 
                 <p
                     v-if="message"
-                    class="text-lg md:text-xl text-white max-w-2xl font-semibold mx-auto leading-relaxed opacity-90 drop-shadow-xl"
+                    class="text-sm md:text-xl text-white max-w-2xl font-semibold mx-auto leading-relaxed opacity-90 drop-shadow-xl"
                 >
                     {{ message }}
                 </p>
@@ -74,15 +76,4 @@ const props = defineProps({
     bgImageAlt: { type: String, default: "" },
 });
 
-// Computed style to handle the background image safely
-const sectionStyle = computed(() => {
-    return props.bgImage
-        ? {
-              backgroundImage: `url(${props.bgImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: props.bgPosition,
-              backgroundRepeat: "no-repeat",
-          }
-        : {};
-});
 </script>
