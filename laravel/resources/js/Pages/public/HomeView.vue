@@ -27,29 +27,17 @@
         <div class="mt-12 flex flex-col-reverse p-5 md:flex-row items-center gap-5">
             <!-- Text -->
             <div class="md:w-1/2 text-justify">
-                <p
-                    class="max-w-2xl md: text-slate-700 text-lg text-xl leading-relaxed"
-                >
-                    We are a <span class="text-yellow-400 font-bold">trusted car rental service</span> proudly serving <span class="font-bold">Ilocos
-                    Norte </span>and nearby areas. Our goal is simple: to
-                    <span class="text-yellow-400 font-bold">
-                        make transportation easy </span
-                    >,
-                    <span class="text-yellow-400 font-bold"> affordable </span>,
-                    and
-                    <span class="text-yellow-400 font-bold"> dependable </span>
-                    for every customer.
-                </p>
+    <p class="max-w-2xl text-slate-700 leading-relaxed text-base md:text-lg lg:text-xl">
+        We are a <span class="text-yellow-400 font-bold">trusted car rental service</span> proudly serving <span class="font-bold">Ilocos Norte </span>and nearby areas. Our goal is simple: to
+        <span class="text-yellow-400 font-bold">make transportation easy</span>,
+        <span class="text-yellow-400 font-bold"> affordable </span>, and
+        <span class="text-yellow-400 font-bold"> dependable </span> for every customer.
+    </p>
 
-                <p
-                    class="mt-7 max-w-2xl md: text-slate-700 text-lg text-xl leading-relaxed"
-                >
-                    Whether you’re a tourist exploring the province, a local
-                    needing a temporary vehicle, or a returning balikbayan
-                    visiting family, we provide well-maintained cars and
-                    friendly  <span class="text-yellow-400 font-bold">service you can rely on.</span>
-                </p>
-            </div>
+    <p class="mt-7 max-w-2xl text-slate-700 leading-relaxed text-base md:text-lg lg:text-xl">
+        Whether you’re a tourist exploring the province, a local needing a temporary vehicle, or a returning balikbayan visiting family, we provide well-maintained cars and friendly <span class="text-yellow-400 font-bold">service you can rely on.</span>
+    </p>
+        </div>
 
             <!-- Image -->
             <div class="md:w-1/2 flex justify-center mb-8 md:mb-0 ml-10">
