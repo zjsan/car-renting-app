@@ -1,4 +1,4 @@
-import { CarFront,  } from 'lucide-vue-next';
+import { CarFront,  HandCoins,  MapPin, Timer,Users , CalendarSync  } from 'lucide-vue-next';
 
 const features = [
     {
@@ -7,27 +7,27 @@ const features = [
         text: "Our cars are regularly serviced and cleaned to ensure safety and comfort.",
     },
     {
-        icon: "💰",
+        icon: HandCoins,
         title: "Transparent & Fair Pricing",
         text: "No hidden charges—what you see is what you pay.",
     },
     {
-        icon: "📍",
+        icon:  MapPin,
         title: "Local Knowledge",
         text: "Based in Ilocos Norte, we understand the roads and destinations.",
     },
     {
-        icon: "⏱",
+        icon:  Timer,
         title: "Easy Booking Process",
         text: "Simple online reservations with fast confirmation.",
     },
     {
-        icon: "🤝",
+        icon: Users ,
         title: "Customer-Focused Service",
         text: "We value long-term trust and positive customer experiences.",
     },
     {
-        icon: "📅",
+        icon:  CalendarSync,
         title: "Flexible Scheduling",
         text: "Plans changed? We offer easy rescheduling and flexible rental periods to suit your itinerary.",
     },

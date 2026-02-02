@@ -69,7 +69,10 @@
         </template>
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Cards v-for="item in features" :key="item.title" hoverable>
-                <template #icon>{{ item.icon }}</template>
+                <template #icon>
+                    <!--lucide icons-->
+                    <component :is="item.icon" :size="32" stroke-width="2"/>
+                </template>
                 <template #title>{{ item.title }}</template>
                 <p>
                     {{ item.text }}
