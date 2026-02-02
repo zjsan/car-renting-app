@@ -24,11 +24,13 @@
 import { computed } from "vue";
 
 type Variant = "default" | "outlined" | "soft";
+type Alignment = "left" | "center" | "right" | "justify";
 
 const props = defineProps<{
     variant?: Variant;
     hoverable?: boolean;
     padding?: "sm" | "md" | "lg";
+    align?:  Alignment;  
 }>();
 
 const cardClass = computed(() => {
@@ -49,11 +51,20 @@ const cardClass = computed(() => {
     const hover =
         props.hoverable !== false ? "hover:-translate-y-1 hover:shadow-lg" : "";
 
+    const text_alignments = {
+        left: "text-left",
+        center: "text-center",
+        right: "text-right",
+        justify: "text-justify"
+    }
+    
     return [
         base,
         variants[props.variant ?? "default"],
         paddings[props.padding ?? "md"],
         hover,
+        text_alignments[props.align ?? "center"],
+                
     ].join(" ");
 });
 </script>
