@@ -1,6 +1,8 @@
+import { CarFront,  } from 'lucide-vue-next';
+
 const features = [
     {
-        icon: "🚗",
+        icon: CarFront,
         title: "Well-Maintained Vehicles",
         text: "Our cars are regularly serviced and cleaned to ensure safety and comfort.",
     },
