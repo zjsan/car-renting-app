@@ -137,6 +137,16 @@
             </Cards>
         </div>
     </LandingPageLayout>
+
+    <!-- How it works  -->
+    <LandingPageLayout>
+        <template #subheading>
+            How It <span class="text-blue-600">Works</span>
+        </template>
+        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Vehicle cards would go here -->
+        </div>
+    </LandingPageLayout>
 </template>
 
 <script setup>
