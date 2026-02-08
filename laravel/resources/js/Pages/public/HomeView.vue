@@ -144,7 +144,29 @@
             How It <span class="text-blue-600">Works</span>
         </template>
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Vehicle cards would go here -->
+            <Cards
+                v-for="item in process"
+                :key="item.title"
+                hoverable
+                align="center"
+            >
+                <template #icon>
+                    <!--lucide icons-->
+                    <div
+                        class="flex items-center justify-center mx-auto w-16 h-16 bg-blue-50 text-blue-600 rounded-full mb-4"
+                    >
+                        <component
+                            :is="item.icon"
+                            :size="32"
+                            stroke-width="2"
+                        />
+                    </div>
+                </template>
+                <template #title>{{ item.title }}</template>
+                <p>
+                    {{ item.text }}
+                </p>
+            </Cards>
         </div>
     </LandingPageLayout>
 
@@ -164,4 +186,5 @@ import LandingPageLayout from "../layout/LandingPageLayout.vue";
 import BaseButton from "../components/Basebutton.vue";
 import Cards from "../components/Cards.vue";
 import features from "./features";
+import process from "./process";
 </script>
