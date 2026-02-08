@@ -77,7 +77,7 @@
     </LandingPageLayout>
 
     <!-- What Makes Us Different -->
-    <LandingPageLayout>
+    <LandingPageLayout bgClass="bg-blue-100">
         <template #subheading>
             What Makes Us <span class="text-blue-600">Different</span>
         </template>
