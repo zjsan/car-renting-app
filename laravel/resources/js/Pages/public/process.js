@@ -1,11 +1,4 @@
-import {
-    CarFront,
-    HandCoins,
-    MapPin,
-    Timer,
-    Users,
-    CalendarSync,
-} from "lucide-vue-next";
+import { CarFront, CalendarCheck2 } from "lucide-vue-next";
 
 const features = [
     {
@@ -14,7 +7,7 @@ const features = [
         text: "Explore our diverse fleet of meticulously maintained vehicles. Filter by style, capacity, or fuel type to find the perfect match for your trip.",
     },
     {
-        icon: HandCoins,
+        icon: CalendarCheck2,
         title: "Instant Booking",
         text: "Fill in your travel dates and pickup time. No credit card is required to hold your vehicle—just a few clicks and your car is set aside.",
     },
