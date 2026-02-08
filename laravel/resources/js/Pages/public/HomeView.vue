@@ -79,12 +79,12 @@
     <!-- What Makes Us Different -->
     <LandingPageLayout
         bgClass="bg-blue-100"
-        sectionClass="min-h-screen flex flex-col justify-center py-20"
+        sectionClass="min-h-screen py-20 px-6 flex items-center"
     >
         <template #subheading>
             What Makes Us <span class="text-blue-600">Different</span>
         </template>
-        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 h-4/5">
+        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Cards
                 v-for="item in features"
                 :key="item.title"
