@@ -29,7 +29,7 @@
         </template>
 
         <div
-            class="mt-12 flex flex-col-reverse p-5 md:flex-row items-center gap-5"
+            class="mt-12 flex flex-col-reverse p-5 md:flex-row items-center gap-5 p-5"
         >
             <!-- Text -->
             <div class="md:w-1/2 text-justify">
