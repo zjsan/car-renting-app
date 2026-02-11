@@ -23,7 +23,7 @@
     <!-- About Us Section -->
 
     <!-- Who We Are -->
-    <LandingPageLayout>
+    <LandingPageLayout sectionClass="min-h-0 py-20 px-6">
         <template #subheading>
             Who <span class="text-blue-600">We Are</span>
         </template>
