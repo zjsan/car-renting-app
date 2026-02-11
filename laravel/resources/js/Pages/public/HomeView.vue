@@ -29,7 +29,7 @@
         </template>
 
         <div
-            class="mt-12 flex flex-col-reverse p-5 md:flex-row items-center gap-5 p-5"
+            class="mt-12 flex flex-col-reverse md:flex-row items-center gap-5 p-5"
         >
             <!-- Text -->
             <div class="md:w-1/2 text-justify">
@@ -66,7 +66,9 @@
             </div>
 
             <!-- Image -->
-            <div class="md:w-1/2 flex justify-center mb-8 md:mb-0 ml-10">
+            <div
+                class="w-full md:w-1/2 flex justify-center md: justify-end md:pl-10"
+            >
                 <img
                     src="/public/images/stylish-elegant-woman-car-salon.jpg"
                     alt="Happy customer renting a car"
