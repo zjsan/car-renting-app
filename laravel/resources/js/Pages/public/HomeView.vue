@@ -181,7 +181,9 @@
             Contact <span class="text-blue-600">Us</span>
         </template>
         <div class="flex flex-col p-8 bg-blue border-8 border-black ">
-            <div class="border-4 border-red mb-5">1</div>
+            <div class="border-4 border-red mb-5">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1331.0042714156223!2d120.58792495857945!3d18.19677862431592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1771326094870!5m2!1sen!2sph" width="600" height="450" style="border:0;"  **allowfullscreen** loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <div class="border-4 border-red">2</div>
         </div>
     </LandingPageLayout>
