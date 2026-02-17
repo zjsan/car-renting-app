@@ -180,8 +180,9 @@
         <template #subheading>
             Contact <span class="text-blue-600">Us</span>
         </template>
-        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Vehicle cards would go here -->
+        <div class="flex flex-col p-8 bg-blue border-8 border-black ">
+            <div class="border-4 border-red mb-5">1</div>
+            <div class="border-4 border-red">2</div>
         </div>
     </LandingPageLayout>
 </template>
