@@ -181,9 +181,9 @@
             Contact <span class="text-blue-600">Us</span>
         </template>
         <div
-            class="flex flex-col p-8 bg-blue border-8 border-black justify-center items-center w-full"
+            class="flex flex-col p-8 px-4 bg-blue border-8 border-black justify-center items-center w-full"
         >
-            <div class="border-4 border-red mb-5 w-full">
+            <div class="border-4 border-red mb-5 w-full md:w-1/2 lg:w-1/2">
                 <iframe
                     class="w-full h-96"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1331.0042714156223!2d120.58792495857945!3d18.19677862431592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1771326094870!5m2!1sen!2sph"
