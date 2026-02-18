@@ -197,15 +197,20 @@
                 </iframe>
             </div>
             <div class="border-4 border-red">
-                <div class="grid grid-cols-3 border-4 border-green gap-4 p-5">
+                <div class="grid grid-cols-1 border-4 border-green gap-4 p-5">
                     <div>
                         <p>+6231321</p>
                     </div>
                     <div>
-                        <p>+6231321</p>
+                        <p>
+                            Facebook Page:
+                            <span class="text-blue-600">Car Rental</span>
+                        </p>
                     </div>
                     <div>
-                        <p>+6231321</p>
+                        <BaseButton variant="primary" size="lg" class="w-44"
+                            >Rent a Car</BaseButton
+                        >
                     </div>
                 </div>
             </div>
