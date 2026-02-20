@@ -204,11 +204,15 @@
                     <div>
                         <p>
                             Facebook Page:
-                            <span class="text-blue-600">Car Rental</span>
+                            <span class="text-blue-600">Ilocos Car Rental</span>
                         </p>
+                    </div>
+                    <div>
                         <p>
                             Gmail:
-                            <span class="text-blue-600">Car Rental</span>
+                            <span class="text-blue-600"
+                                >ilocoscarrental@gmail.com</span
+                            >
                         </p>
                     </div>
                     <div>
