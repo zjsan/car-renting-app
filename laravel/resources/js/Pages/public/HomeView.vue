@@ -206,6 +206,10 @@
                             Facebook Page:
                             <span class="text-blue-600">Car Rental</span>
                         </p>
+                        <p>
+                            Gmail:
+                            <span class="text-blue-600">Car Rental</span>
+                        </p>
                     </div>
                     <div>
                         <BaseButton variant="primary" size="lg" class="w-44"

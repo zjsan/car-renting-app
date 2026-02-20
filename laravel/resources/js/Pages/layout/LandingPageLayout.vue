@@ -9,9 +9,9 @@
     >
         <!--bg image section-->
         <div v-if="bgImage" class="absolute inset-0 z-0">
-            <img 
-                :src="bgImage" 
-                :alt="bgImageAlt" 
+            <img
+                :src="bgImage"
+                :alt="bgImageAlt"
                 class="w-full h-full object-cover"
                 :style="{ objectPosition: bgPosition }"
             />
@@ -75,5 +75,4 @@ const props = defineProps({
     bgPosition: { type: String, default: "center" }, //for background position flexibility
     bgImageAlt: { type: String, default: "" },
 });
-
 </script>
