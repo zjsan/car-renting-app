@@ -1,13 +1,8 @@
-import { Facebook } from "lucide-vue-next";
+import { Mail } from "lucide-vue-next";
 
 const contacts = [
     {
-        icon: Facebook,
-        title: "Facebook Page",
-        text: "Ilocos Car Rental",
-    },
-    {
-        icon: null,
+        icon: Mail,
         title: "Gmail",
         text: "ilocoscarrental@gmail.com",
     },

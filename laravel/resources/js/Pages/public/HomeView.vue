@@ -209,10 +209,10 @@
                     </div>
                     <div>
                         <p>
-                            Gmail:
-                            <span class="text-blue-600"
-                                >ilocoscarrental@gmail.com</span
-                            >
+                            {{ contacts.icon }}
+                            <span class="text-blue-600">{{
+                                contacts.text
+                            }}</span>
                         </p>
                     </div>
                     <div>
@@ -232,4 +232,5 @@ import BaseButton from "../components/Basebutton.vue";
 import Cards from "../components/Cards.vue";
 import features from "./features";
 import process from "./process";
+import contacts from "./contacts";
 </script>
