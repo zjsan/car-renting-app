@@ -185,7 +185,7 @@
             Contact <span class="text-blue-600">Us</span>
         </template>
         <div
-            class="flex flex-col p-8 px-4 bg-blue border-8 border-black justify-center items-center w-full"
+            class="flex flex-col p-8 px-4 bg-blue border-8 border-black justify-center items-center w-full lg: flex-row gap-12 items-start"
         >
             <div class="border-4 border-red mb-7 w-full md:w-1/2 lg:w-2/5">
                 <iframe
