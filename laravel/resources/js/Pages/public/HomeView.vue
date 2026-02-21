@@ -180,14 +180,15 @@
 
     <!-- ]Contact Us -->
     <LandingPageLayout
+     bgClass="bg-blue-950"
     >
         <template #subheading>
             Contact <span class="text-blue-600">Us</span>
         </template>
         <div
-            class="flex flex-col p-8 px-4 bg-blue border-8 border-black justify-center items-center w-full lg: flex-row gap-12 items-start"
+            class="flex flex-col lg:flex-row p-8 px-4 border-8 border-black justify-center items-center lg:items-start w-full gap-8"
         >
-            <div class="border-4 border-red mb-7 w-full md:w-1/2 lg:w-2/5">
+            <div class="border-4 border-red mb-7 w-full md:w-3/4 lg:w-2/5">
                 <iframe
                     class="w-full h-96"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1331.0042714156223!2d120.58792495857945!3d18.19677862431592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1771326094870!5m2!1sen!2sph"
@@ -214,7 +215,7 @@
                   
                     <div>
                         <BaseButton variant="primary" size="lg" class="w-44"
-                            >Rent a Car</BaseButton
+                            >Rent a Car Now!</BaseButton
                         >
                     </div>
                 </div>
