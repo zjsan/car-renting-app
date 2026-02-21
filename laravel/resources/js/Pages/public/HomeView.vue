@@ -207,10 +207,10 @@
                             <span class="text-blue-600">Ilocos Car Rental</span>
                         </p>
                     </div>
-                    <h1 class="text-red-500">TEST RENDER</h1>
 
                     <div v-for="item in contacts" :key="item.title">
                         <p>
+                            <component :is="item.icon" class="inline w-5 h-5" /> &nbsp
                             <span class="text-blue-600">
                                 {{ item.text }}
                             </span>
