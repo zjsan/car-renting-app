@@ -207,14 +207,17 @@
                             <span class="text-blue-600">Ilocos Car Rental</span>
                         </p>
                     </div>
-                    <div>
-                        <p>
-                            {{ contacts.icon }}
-                            <span class="text-blue-600">{{
-                                contacts.text
-                            }}</span>
-                        </p>
-                    </div>
+                    <template>
+                        <div v-for="item in contacts" :key="item.title">
+                            <p>
+                                {{ contacts.icon }}
+                                <span class="text-blue-600">{{
+                                    contacts.text
+                                }}</span>
+                            </p>
+                        </div>
+                    </template>
+                  
                     <div>
                         <BaseButton variant="primary" size="lg" class="w-44"
                             >Rent a Car</BaseButton
