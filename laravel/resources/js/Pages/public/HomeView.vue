@@ -198,15 +198,6 @@
             </div>
             <div class="border-4 border-red">
                 <div class="grid grid-cols-1 border-4 border-green gap-4 p-5">
-                    <div>
-                        <p>+6231321</p>
-                    </div>
-                    <div>
-                        <p>
-                            Facebook Page:
-                            <span class="text-blue-600">Ilocos Car Rental</span>
-                        </p>
-                    </div>
 
                     <div v-for="item in contacts" :key="item.title">
                         <p>
