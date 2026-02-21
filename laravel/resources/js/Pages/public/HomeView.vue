@@ -144,9 +144,12 @@
     </LandingPageLayout>
 
     <!-- How it works  -->
-    <LandingPageLayout>
+    <LandingPageLayout
+    bgClass="bg-slate-800"
+    sectionClass="min-h-screen py-20 px-6 flex items-center"
+    >
         <template #subheading>
-            How It <span class="text-blue-600">Works</span>
+           <span class="text-white">How It</span>  <span class="text-blue-600">Works</span>
         </template>
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Cards
@@ -176,7 +179,8 @@
     </LandingPageLayout>
 
     <!-- ]Contact Us -->
-    <LandingPageLayout>
+    <LandingPageLayout
+    >
         <template #subheading>
             Contact <span class="text-blue-600">Us</span>
         </template>
@@ -201,8 +205,8 @@
 
                     <div v-for="item in contacts" :key="item.title">
                         <p>
-                            <component :is="item.icon" class="inline w-5 h-5" /> &nbsp
-                            <span class="text-blue-600">
+                            <component :is="item.icon" class="inline w-5 h-5 bg-blue-50 text-blue-600 rounded-full " /> &nbsp
+                            <span class>
                                 {{ item.text }}
                             </span>
                         </p>
