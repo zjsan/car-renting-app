@@ -207,16 +207,15 @@
                             <span class="text-blue-600">Ilocos Car Rental</span>
                         </p>
                     </div>
-                    <template>
-                        <div v-for="item in contacts" :key="item.title">
-                            <p>
-                                {{ contacts.icon }}
-                                <span class="text-blue-600">{{
-                                    contacts.text
-                                }}</span>
-                            </p>
-                        </div>
-                    </template>
+                    <h1 class="text-red-500">TEST RENDER</h1>
+
+                    <div v-for="item in contacts" :key="item.title">
+                        <p>
+                            <span class="text-blue-600">
+                                {{ item.text }}
+                            </span>
+                        </p>
+                    </div>
                   
                     <div>
                         <BaseButton variant="primary" size="lg" class="w-44"
@@ -236,4 +235,6 @@ import Cards from "../components/Cards.vue";
 import features from "./features";
 import process from "./process";
 import contacts from "./contacts";
+
+console.log("contacts:", contacts)
 </script>
