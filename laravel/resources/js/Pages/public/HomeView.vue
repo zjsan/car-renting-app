@@ -183,6 +183,9 @@
     <LandingPageLayout
         subheading="Get in Touch"
         message="We're ready to provide the best cars for your Ilocos travels!"
+        bgImage="images/getintouchimage.jpg"
+        bgPosition="center"
+        sectionClass="mt-10 h-3/6 md:h-full flex items-center"
     >
     </LandingPageLayout>
     <LandingPageLayout bgClass="bg-gray-200">
