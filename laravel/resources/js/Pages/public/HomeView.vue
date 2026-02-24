@@ -145,11 +145,12 @@
 
     <!-- How it works  -->
     <LandingPageLayout
-    bgClass="bg-slate-800"
-    sectionClass="min-h-screen py-20 px-6 flex items-center"
+        bgClass="bg-slate-800"
+        sectionClass="min-h-screen py-20 px-6 flex items-center"
     >
         <template #subheading>
-           <span class="text-white">How It</span>  <span class="text-blue-600">Works</span>
+            <span class="text-white">How It</span>
+            <span class="text-blue-600">Works</span>
         </template>
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Cards
@@ -179,14 +180,12 @@
     </LandingPageLayout>
 
     <!-- ]Contact Us -->
-    <LandingPageLayout
-     bgClass="bg-blue-950"
-    >
+    <LandingPageLayout>
         <template #subheading>
             Contact <span class="text-blue-600">Us</span>
         </template>
         <div
-            class="flex flex-col lg:flex-row p-8 px-4 border-8 border-black justify-center items-center lg:items-start w-full gap-8"
+            class="flex flex-col lg:flex-row p-8 px-4 justify-center items-center lg:items-start w-full gap-8"
         >
             <div class="border-4 border-red mb-7 w-full md:w-3/4 lg:w-2/5">
                 <iframe
@@ -201,18 +200,21 @@
                 >
                 </iframe>
             </div>
-            <div class="border-4 border-red">
-                <div class="grid grid-cols-1 border-4 border-green gap-4 p-5">
-
+            <div>
+                <div class="grid grid-cols-1 gap-4 p-5">
                     <div v-for="item in contacts" :key="item.title">
                         <p>
-                            <component :is="item.icon" class="inline w-5 h-5 bg-blue-50 text-blue-600 rounded-full " /> &nbsp
+                            <component
+                                :is="item.icon"
+                                class="inline w-5 h-5 bg-blue-50 text-blue-600 rounded-full"
+                            />
+                            &nbsp
                             <span class>
                                 {{ item.text }}
                             </span>
                         </p>
                     </div>
-                  
+
                     <div>
                         <BaseButton variant="primary" size="lg" class="w-44"
                             >Rent a Car Now!</BaseButton
@@ -232,5 +234,5 @@ import features from "./features";
 import process from "./process";
 import contacts from "./contacts";
 
-console.log("contacts:", contacts)
+console.log("contacts:", contacts);
 </script>
