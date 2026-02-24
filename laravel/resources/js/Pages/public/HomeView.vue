@@ -180,7 +180,12 @@
     </LandingPageLayout>
 
     <!-- ]Contact Us -->
-    <LandingPageLayout>
+    <LandingPageLayout
+        subheading="Get in Touch"
+        message="We're ready to provide the best cars for your Ilocos travels!"
+    >
+    </LandingPageLayout>
+    <LandingPageLayout bgClass="bg-gray-200">
         <template #subheading>
             Contact <span class="text-blue-600">Us</span>
         </template>
