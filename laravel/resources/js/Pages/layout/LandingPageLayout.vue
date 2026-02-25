@@ -40,7 +40,10 @@
                         titleClass,
                     ]"
                 >
-                    <slot name="subheading">
+                    <slot
+                        name="subheading"
+                        class="text-2xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white drop-shadow-xl"
+                    >
                         {{ props.subheading }}
                     </slot>
                 </h2>
