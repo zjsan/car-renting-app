@@ -188,7 +188,9 @@
         bgPosition="center"
         sectionClass="mt-10 h-3/6 md:h-full flex items-center"
     >
-        <template #subheading> Your Ilocos Adventure Starts Here. </template>
+        <template #subheading class="text-left">
+            Your Ilocos Adventure Starts Here.
+        </template>
     </LandingPageLayout>
     <LandingPageLayout bgClass="bg-gray-200">
         <template #subheading>

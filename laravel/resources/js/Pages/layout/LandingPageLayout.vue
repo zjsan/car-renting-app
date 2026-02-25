@@ -50,7 +50,10 @@
 
                 <p
                     v-if="message"
-                    class="text-sm md:text-xl text-white max-w-2xl font-semibold mx-auto leading-relaxed opacity-90 drop-shadow-xl"
+                    :class="[
+                        'text-sm md:text-xl text-white max-w-2xl font-semibold mx-auto leading-relaxed opacity-90 drop-shadow-xl',
+                        messageClass,
+                    ]"
                 >
                     {{ message }}
                 </p>
@@ -68,6 +71,7 @@ const props = defineProps({
     title: { type: String },
     subheading: { type: String },
     message: { type: String },
+    messageClass: { type: String, default: "" }, // Add this
     bgClass: { type: String, default: "py-16 px-4 bg-gray-50" },
     titleClass: { type: String, default: "text-slate-900" },
 
