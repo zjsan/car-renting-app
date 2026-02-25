@@ -183,19 +183,21 @@
 
     <!--Get in touch-->
     <LandingPageLayout
-        message="We're ready to provide the best cars for your Ilocos travels!"
+        message="From the sand dunes of Paoay to the cobble-stones of Vigan, we provide the comfort you need for the road ahead. We're ready when you are."
         bgImage="images/getintouchimage.jpg"
         bgPosition="center"
         sectionClass="mt-10 h-3/6 md:h-full flex items-center"
     >
-        <template #subheading>
-            Get in <span class="text-blue-600">Touch</span>
-        </template>
+        <template #subheading> Your Ilocos Adventure Starts Here. </template>
     </LandingPageLayout>
     <LandingPageLayout bgClass="bg-gray-200">
         <template #subheading>
             Contact <span class="text-blue-600">Us</span>
         </template>
+
+        <div>
+            <h3 class="text-bold text-center">Rent your dream car</h3>
+        </div>
         <div
             class="flex flex-col lg:flex-row p-8 px-4 justify-center items-center lg:items-start w-full gap-8"
         >
