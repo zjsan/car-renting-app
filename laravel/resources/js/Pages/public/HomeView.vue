@@ -184,6 +184,7 @@
     <!--Get in touch-->
     <LandingPageLayout
         message="From the sand dunes of Paoay to the cobble-stones of Vigan, we provide the comfort you need for the road ahead. We're ready when you are."
+        messageClass="text-left"
         bgImage="images/getintouchimage.jpg"
         bgPosition="center"
         sectionClass="mt-10 h-3/6 md:h-full flex items-center"
