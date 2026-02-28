@@ -26,8 +26,8 @@
 
         <!--desktop -->
 
-        <div>
-            <div class="flex">
+        <div class="px-4 py-2 bg-gray-100">
+            <div class="flex gap-x-4">
                 <a href="#" class="block">Home</a>
                 <a href="#" class="block">About</a>
                 <a href="#" class="block">Rent Process</a>
