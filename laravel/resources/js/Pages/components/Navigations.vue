@@ -4,7 +4,7 @@
         <!--Mobile-->
         <div>
             <div>
-                <button @click="toggleMenu">
+                <button @click="toggleMenu" class="cursor-pointer">
                      <!--burger icon-->
                     <svg :class="isOpen ? 'hidden' : ''" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -16,9 +16,23 @@
                     </svg>
                 </button>
             </div>
-            <nav>
-
+            <nav :class="isOpen ? '' : 'hidden'">
+                <a href="#" class="block">Home</a>
+                <a href="#" class="block">About</a>
+                <a href="#" class="block">Rent Process</a>
+                <a href="#" class="block">Contacts</a>
             </nav>
+        </div>
+
+        <!--desktop -->
+
+        <div>
+            <div class="flex">
+                <a href="#" class="block">Home</a>
+                <a href="#" class="block">About</a>
+                <a href="#" class="block">Rent Process</a>
+                <a href="#" class="block">Contacts</a>
+            </div>
         </div>
     </div>
 </template>
