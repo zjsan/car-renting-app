@@ -135,9 +135,9 @@
             </Cards>
 
             <Cards hoverable align="center">
-                <template #title>Mirage 2024</template>
+                <template #title>Toyota Hiace 2018</template>
                 <p>
-                    Comfortable sedan, perfect for city drives and long trips.
+                     a versatile, spacious, and reliable solution for large group travel.
                 </p>
             </Cards>
         </div>
@@ -194,13 +194,14 @@
           
         </template>
     </LandingPageLayout>
+
     <LandingPageLayout bgClass="bg-gray-200">
         <template #subheading>
             Contact <span class="text-blue-600">Us</span>
         </template>
 
         <div>
-            <h3 class="text-bold text-center">Rent your dream car</h3>
+            <h3 class="text-bold text-center">Rent your dream car. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora soluta nemo error, enim maxime saepe quam ullam non, facilis corrupti eligendi. Nostrum numquam, sed vero similique ut dolorum magni omnis?</h3>
         </div>
         <div
             class="flex flex-col lg:flex-row p-8 px-4 justify-center items-center lg:items-start w-full gap-8"
