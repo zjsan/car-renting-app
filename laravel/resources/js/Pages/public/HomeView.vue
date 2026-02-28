@@ -128,16 +128,16 @@
             </Cards>
 
             <Cards hoverable align="center">
-                <template #title>Montero 2016</template>
+                <template #title>Montero Sport 2016</template>
                 <p>
-                    Comfortable sedan, perfect for city drives and long trips.
+                    A popular 7-seater mid-size SUV.
                 </p>
             </Cards>
 
             <Cards hoverable align="center">
                 <template #title>Toyota Hiace 2018</template>
                 <p>
-                     a versatile, spacious, and reliable solution for large group travel.
+                     A versatile, spacious, and reliable solution for large group travel.
                 </p>
             </Cards>
         </div>
