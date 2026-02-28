@@ -17,21 +17,21 @@
                 </button>
             </div>
             <nav :class="isOpen ? '' : 'hidden'">
-                <a href="#" class="block font-bold text-blue-800">Home</a>
-                <a href="#" class="block font-bold text-blue-800">About</a>
-                <a href="#" class="block font-bold text-blue-800">Rent Process</a>
-                <a href="#" class="block font-bold text-blue-800">Contacts</a>
+                <a href="#" class="block font-bold text-gray-700">Home</a>
+                <a href="#" class="block font-bold text-gray-700">About</a>
+                <a href="#" class="block font-bold text-gray-700">Rent Process</a>
+                <a href="#" class="block font-bold text-gray-700">Contacts</a>
             </nav>
         </div>
 
         <!--desktop -->
-
+        
         <div class="hidden lg:block px-4 py-2 bg-gray-100">
             <div class="flex gap-x-4">
-                <a href="#" class="block">Home</a>
-                <a href="#" class="block">About</a>
-                <a href="#" class="block">Rent Process</a>
-                <a href="#" class="block">Contacts</a>
+                <a href="#" class="block font-bold text-gray-700 hover:text-black">Home</a>
+                <a href="#" class="block font-bold text-gray-700 hover:text-black">About</a>
+                <a href="#" class="block font-bold text-gray-700 hover:text-black">Rent Process</a>
+                <a href="#" class="block font-bold text-gray-700 hover:text-black">Contacts</a>
             </div>
         </div>
     </div>
