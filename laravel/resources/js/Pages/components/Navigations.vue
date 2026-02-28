@@ -2,7 +2,7 @@
     <div>
 
         <!--Mobile-->
-        <div class="px-4 py-2 bg-gray-100 md:hidden">
+        <div class="px-4 py-2 bg-gray-100 lg:hidden">
             <div>
                 <button @click="toggleMenu" class="cursor-pointer">
                      <!--burger icon-->
@@ -17,16 +17,16 @@
                 </button>
             </div>
             <nav :class="isOpen ? '' : 'hidden'">
-                <a href="#" class="block">Home</a>
-                <a href="#" class="block">About</a>
-                <a href="#" class="block">Rent Process</a>
-                <a href="#" class="block">Contacts</a>
+                <a href="#" class="block font-bold text-blue-800">Home</a>
+                <a href="#" class="block font-bold text-blue-800">About</a>
+                <a href="#" class="block font-bold text-blue-800">Rent Process</a>
+                <a href="#" class="block font-bold text-blue-800">Contacts</a>
             </nav>
         </div>
 
         <!--desktop -->
 
-        <div class="hidden lg:px-4 py-2 bg-gray-100 block">
+        <div class="hidden lg:block px-4 py-2 bg-gray-100">
             <div class="flex gap-x-4">
                 <a href="#" class="block">Home</a>
                 <a href="#" class="block">About</a>
