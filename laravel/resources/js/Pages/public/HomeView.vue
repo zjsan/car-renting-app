@@ -120,25 +120,14 @@
         </template>
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Vehicle cards would go here -->
-            <Cards hoverable align="center">
-                <template #title>Toyota Vios 2020</template>
-                <p>
-                    Comfortable sedan, perfect for city drives and long trips.
-                </p>
-            </Cards>
-
-            <Cards hoverable align="center">
-                <template #title>Montero Sport 2016</template>
-                <p>
-                    A popular 7-seater mid-size SUV.
-                </p>
-            </Cards>
-
-            <Cards hoverable align="center">
-                <template #title>Toyota Hiace 2018</template>
-                <p>
-                     A versatile, spacious, and reliable solution for large group travel.
-                </p>
+            <Cards 
+                align="center"
+                v-for="car in cars"
+                :key="car.name"
+                hoverable >
+                
+                <p class="text-black font-medium text-xl">{{ car.name }}</p>
+                <p>{{ car.description }}</p>
             </Cards>
         </div>
     </LandingPageLayout>
@@ -190,7 +179,7 @@
         sectionClass="mt-10 h-3/6 md:h-full flex items-center"
     >
         <template #subheading>
-            <span class="text-white text-left text-bold"> Your Ilocos Adventure Starts Here.</span>
+            <span class="text-white text-left font-bold"> Your Ilocos Adventure Starts Here.</span>
           
         </template>
     </LandingPageLayout>
@@ -252,6 +241,7 @@ import Cards from "../components/Cards.vue";
 import features from "./features";
 import process from "./process";
 import contacts from "./contacts";
+import cars from "./cars"
 
 console.log("contacts:", contacts);
 </script>
