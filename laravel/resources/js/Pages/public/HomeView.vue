@@ -126,6 +126,9 @@
                 :key="car.name"
                 hoverable >
                 
+                <div>
+                    <img :src="car.image" alt="">
+                </div>
                 <p class="text-black font-medium text-xl">{{ car.name }}</p>
                 <p>{{ car.description }}</p>
             </Cards>
