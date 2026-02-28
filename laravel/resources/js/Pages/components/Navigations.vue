@@ -2,7 +2,7 @@
     <div>
 
         <!--Mobile-->
-        <div>
+        <div class="px-4 py-2 bg-gray-100 md:hidden">
             <div>
                 <button @click="toggleMenu" class="cursor-pointer">
                      <!--burger icon-->
@@ -26,7 +26,7 @@
 
         <!--desktop -->
 
-        <div class="px-4 py-2 bg-gray-100">
+        <div class="hidden lg:px-4 py-2 bg-gray-100 block">
             <div class="flex gap-x-4">
                 <a href="#" class="block">Home</a>
                 <a href="#" class="block">About</a>
