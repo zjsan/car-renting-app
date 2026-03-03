@@ -120,14 +120,9 @@
         </template>
         <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Vehicle cards would go here -->
-            <Cards 
-                align="center"
-                v-for="car in cars"
-                :key="car.name"
-                hoverable >
-                
+            <Cards align="center" v-for="car in cars" :key="car.name" hoverable>
                 <div>
-                    <img :src="car.image" alt="">
+                    <img :src="car.image" alt="" />
                 </div>
                 <p class="text-black font-medium text-xl">{{ car.name }}</p>
                 <p>{{ car.description }}</p>
@@ -182,8 +177,9 @@
         sectionClass="mt-10 h-3/6 md:h-full flex items-center"
     >
         <template #subheading>
-            <span class="text-white text-left font-bold"> Your Ilocos Adventure Starts Here.</span>
-          
+            <span class="text-white text-left font-bold">
+                Your Ilocos Adventure Starts Here.</span
+            >
         </template>
     </LandingPageLayout>
 
@@ -193,7 +189,12 @@
         </template>
 
         <div>
-            <h3 class="text-bold text-center">Rent your dream car. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora soluta nemo error, enim maxime saepe quam ullam non, facilis corrupti eligendi. Nostrum numquam, sed vero similique ut dolorum magni omnis?</h3>
+            <h3 class="text-bold text-center">
+                Rent your dream car. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Tempora soluta nemo error, enim maxime saepe
+                quam ullam non, facilis corrupti eligendi. Nostrum numquam, sed
+                vero similique ut dolorum magni omnis?
+            </h3>
         </div>
         <div
             class="flex flex-col lg:flex-row p-8 px-4 justify-center items-center lg:items-start w-full gap-8"
@@ -244,7 +245,7 @@ import Cards from "../components/Cards.vue";
 import features from "./features";
 import process from "./process";
 import contacts from "./contacts";
-import cars from "./cars"
+import cars from "./cars";
 
 console.log("contacts:", contacts);
 </script>
