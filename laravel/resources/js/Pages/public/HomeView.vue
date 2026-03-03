@@ -236,6 +236,8 @@
             </div>
         </div>
     </LandingPageLayout>
+
+    <Footer />
 </template>
 
 <script setup>
@@ -246,6 +248,7 @@ import features from "./features";
 import process from "./process";
 import contacts from "./contacts";
 import cars from "./cars";
+import Footer from "../components/Footer.vue";
 
 console.log("contacts:", contacts);
 </script>
