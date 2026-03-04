@@ -4,8 +4,8 @@ import LandingPage from "../Pages/public/LandingPage.vue";
 import Login from "../Pages/public/Login.vue";
 
 const routes = [
-    { path: "/", component: LandingPage },
-    { path: "/login", component: Login },
+    { path: "/", name: "Landing", component: LandingPage },
+    { path: "/login", name: "Login", component: Login },
 ];
 
 export const router = createRouter({
