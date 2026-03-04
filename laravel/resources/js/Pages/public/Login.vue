@@ -24,5 +24,5 @@
     </LandingPageLayout>
 </template>
 <script setup>
-import LandingPageLayout from "../components/LandingPageLayout.vue";
+import LandingPageLayout from "../layout/LandingPageLayout.vue";
 </script>
