@@ -55,5 +55,9 @@
             </div>
         </div>
     </section>
+
+    <Footer />
 </template>
-<script setup></script>
+<script setup>
+import Footer from "../components/Footer.vue";
+</script>

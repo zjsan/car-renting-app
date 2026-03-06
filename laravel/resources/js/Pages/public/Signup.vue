@@ -1,7 +1,7 @@
 <template>
     <!-- hero section -->
     <section
-        class="min-h-screen py-20 px-6 flex flex items-center justify-center items-start bg-slate-800"
+        class="min-h-full py-20 px-6 flex flex items-center justify-center items-start bg-slate-800"
     >
         >
         <div class="mt-2 max-w-2xl">
@@ -72,5 +72,9 @@
             </div>
         </div>
     </section>
+
+    <Footer />
 </template>
-<script setup></script>
+<script setup>
+import Footer from "../components/Footer.vue";
+</script>
