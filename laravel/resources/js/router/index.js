@@ -5,7 +5,12 @@ import Login from "../Pages/public/Login.vue";
 
 const routes = [
     { path: "/", name: "Landing", component: LandingPage },
-    { path: "/login", name: "Login", component: Login },
+    {
+        path: "/login",
+        name: "Login",
+        component: Login,
+        meta: { hideNavigation: true },
+    },
 ];
 
 export const router = createRouter({
