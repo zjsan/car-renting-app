@@ -22,18 +22,41 @@
                         id="email"
                         placeholder="Email"
                         class="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white border border-gray-700"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="fname"
+                        placeholder="First Name"
+                        class="mt-3 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white border border-gray-700"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="lname"
+                        placeholder="Last Name"
+                        class="mt-3 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white border border-gray-700"
+                        required
                     />
                     <input
                         type="password"
                         id="password"
                         placeholder="Password"
                         class="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white mt-4 border border-gray-700"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        class="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white mt-4 border border-gray-700"
+                        required
                     />
                     <button
                         type="submit"
-                        class="mt-8 px-22 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        class="mt-8 px-20 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
-                        Login
+                        Sign Up
                     </button>
 
                     <p class="text-sm text-gray-500 mt-4">
