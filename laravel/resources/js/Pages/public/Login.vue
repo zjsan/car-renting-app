@@ -17,7 +17,7 @@
             >
                 <form action="">
                     <input
-                        type="text"
+                        type="email"
                         id="email"
                         placeholder="Email"
                         class="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white border border-gray-700"
