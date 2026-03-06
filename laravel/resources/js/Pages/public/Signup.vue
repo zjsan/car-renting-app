@@ -60,19 +60,12 @@
                     </button>
 
                     <p class="text-sm text-gray-500 mt-4">
-                        Forgot Password?
+                        Already have an account?
                         <a
                             href="/register"
                             class="text-blue-500 hover:underline"
                         >
-                            Click here to reset
-                        </a>
-                    </p>
-
-                    <p class="text-sm text-gray-500 mt-4">
-                        Don't have an account?
-                        <a href="#" class="text-blue-500 hover:underline">
-                            Sign up
+                            Click here to sign in
                         </a>
                     </p>
                 </form>
