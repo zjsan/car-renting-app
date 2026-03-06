@@ -1,6 +1,7 @@
 <!-- src/App.vue -->
 <template>
-    <Navigations/>
+    <!--render landing page number if hideNavigation is set to false only-->
+    <Navigations v-if="!$route.meta.hideNavigation" />
     <RouterView />
 </template>
 
