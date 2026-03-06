@@ -1,13 +1,10 @@
 <template>
     <!-- hero section -->
-    <LandingPageLayout
-        bgClass="bg-slate-800"
-        sectionClass="min-h-screen py-20 px-6 flex items-center"
+    <section
+        class="min-h-screen py-20 px-6 flex flex items-center justify-center items-start bg-slate-800"
     >
-        <template #subheading>
-            Welcome to <span class="text-blue-600">CarRent</span>
-        </template>
-        <div class="mt-16 max-w-2xl">
+        >
+        <div class="mt-2 max-w-2xl">
             <h1 class="text-4xl font-bold text-white mb-6">
                 Rent Your Dream Car Today!
             </h1>
@@ -21,8 +18,6 @@
                 <Button variant="outline" size="lg">Learn More</Button>
             </div>
         </div>
-    </LandingPageLayout>
+    </section>
 </template>
-<script setup>
-import LandingPageLayout from "../layout/LandingPageLayout.vue";
-</script>
+<script setup></script>
