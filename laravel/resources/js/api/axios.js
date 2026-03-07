@@ -5,4 +5,7 @@ const api = axios.create({
     withCredentials: true,
 });
 
+api.defaults.withCredentials = true;
+api.defaults.withXSRFToken = true;
+
 export default api;
