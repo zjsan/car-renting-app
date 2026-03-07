@@ -7,6 +7,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use PHPUnit\Util\Json;
 
 class AuthController extends Controller
 {
@@ -27,13 +28,21 @@ class AuthController extends Controller
             ], 401);
         }
 
-        $token = $request->user()->createToken($request->token_name);//create token
+        $token = $request->user()->createToken($request->token_name)->plainTextToken;//create token
         
 
+        //if successful login return a success mesage, token, and user
         if (Auth::attempt($credentials)) {
             
  
-            return redirect()->intended('dashboard');
+            return response()->json([
+                'message' => 'Successful login',
+                'token' => $token,
+                'user' => $user
+
+            ], 200);
+             
+        
         }
  
     }
