@@ -3,7 +3,6 @@
     <section
         class="min-h-screen py-20 px-6 flex flex items-center justify-center items-start bg-slate-800"
     >
-        >
         <div class="mt-2 max-w-2xl">
             <h1 class="text-4xl font-bold text-white mb-6">
                 Ready for Your Next Ride?
@@ -38,7 +37,7 @@
                     <p class="text-sm text-gray-500 mt-4">
                         Forgot Password?
                         <a
-                            href="/register"
+                            href="#"
                             class="text-blue-500 hover:underline"
                         >
                             Click here to reset
