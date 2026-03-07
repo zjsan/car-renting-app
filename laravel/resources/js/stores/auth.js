@@ -18,6 +18,7 @@ export const useAuthStore = defineStore('auth', {
          try {
             loading = true
 
+            api.get('/sanctum/csrf-cookie');//intialize csrf protection
             
          } catch (error) {
             
